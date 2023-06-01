@@ -1,0 +1,63 @@
+<!DOCTYPE html><!--Dokument vrste--> <!--POZOR: KER SE PONAVLJA HEAD TER ZAČETNI DEL BODY DO NAV ter footer, BOM SAMO V TEM DOKUMENTU TO KOMENTIRALA IN EN V OSTALIH!!!-->
+<html> <!--vrsta html koda-->
+	<head> <!--glava v html datoteki-->
+		<meta charset="utf-8"> <!--uporabljeni posebni znaki-->
+		<meta name="description" content="Računalniške igre in njihova izdelava"><!--opis spletne strani v meta podatkih-->
+		<meta name="keywords" content="igre, računalniške igre, izdelava igre"><!--ključne besede v metapodatkih-->
+		<meta name="author" content="Maja Polak"> <!--avtor v metapodatkih-->
+		
+		<link rel="stylesheet" href="stil.css"><!--povezava do stil datoteke-->
+	
+		<title>Računalniške igre</title> <!--Naslov spletnega mesta v zavihku-->
+	</head>
+	<body> <!--Začetek telesa-->
+		<div id="naslov"> <!--dala posebej id za začetni predel, kjer je logotip in naslov spletne strani za lažje oblikovanje v css-->
+			<a href="index.html"> <!--ko klikneš na logotip, te odpelje na index.html, kar je ta domača stran-->
+				<img src="Slike/projektna.svg" alt="Logotip začetnic imena" height="500"> <!--logotip spletne strani, ob kliku prinese domov-->
+			</a>
+			<h1>Računalniške igre</h1><!--Naslov spletnega mesta-->
+		</div>
+		<nav> <!--Meni, da se lahko greš na ostale podstrani.-->
+			<a href="Podstrani/igra.html">Kaj je igra?</a><!--Podstran igra-->
+			<a href="Podstrani/vrste.html">Vrste iger</a> <!--Podstran Vrste iger-->
+			<a href="Podstrani/zgodovina.html">Zgodovina</a><!--Podstran zgodovine iger-->
+			<a href ="Podstrani/izdelava.html">Izdelava</a><!--Podstran izdelae igre-->
+			<a href="Podstrani/viri.html">Viri</a><!--podstran do virov-->
+		</nav>
+		
+		</br>
+		<div class="besedilo"><!--Glavno besedilo uporabljeno na tej strani, razdeljeni na uvod v spletno mesto in nekaj podatkov o meni in nadajlnem navigiranju po spletnih straneh-->
+			<p class="uvod">Večina najstnikov rada igra računalniške igre, saj se od tega sprostijo, kratkočasijo, ter imajo to kot 
+			nek pobeg iz realnosti (pobeg pred vsakodnevnimi obveznostmi, slabi odnosi z bližnjimi, strah pred neuspehom 
+			v zunanjem svetu - pomanjkanje samozavesti), nekateri se zatekajo k igram tudi iz razlogov kot so druženje, 
+			zabava in priložnost, da se izkažejo (pripomore k izboljšanju samozavesti). Z igranjem lahko pridobijo tudi določene 
+			spretnosti (vizualno – motorične, znanje, logika, strategija, znanje jezikov ter besedišče, boljši refleksi - krajši 
+			odzivni čas).</p>
+			<!--class uvod na levi strani spletišča, namenjen za uvod na spletišče in nekaj podatkov na splošno o najstnikih in igrah-->
+			<!--class podatki so moji podatki in za tem interesi, da bi poslala bralca na druge podstrani-->
+			
+			<div class="podatki">
+				<h2>Moji podatki</h2>
+				<p>Sem študentka pedagoške fakultete v Ljubljani, smer Dvopredmetni učitelj računalništva in matematike. 
+				Trenutno v prostem času ustvarjam igro, na to temo je pa tudi namenjena spletna stran.</p>
+				<p>Igra, ki jo izdelujem, je v pripravi, s programiranjem še nisem začela, saj se še vedno ukvarjam s samo zgodbo.
+				Ker imam rada igre, ki vsebujejo zgodbo, in kjer igralec lahko naredi svoje odločitve, je to zelo veliko več dela, 
+				kot če bi imela arkadno igro. Seveda pa tudi rečejo, da tam, kjer se veliko dela vloži, lahko nekaj izjemnega nastane.</p>
+				<p>Če vas zanimajo glavne informacije in delitev iger na zvrsti, obiščite stran <a href="Podstrani/igra.html">kaj je igra?</a>
+					 in <a href="Podstrani/vrste.html">vrste iger.</a>
+				<p>Če hočete več informacij o nastanku računalniških iger, obiščite stran 
+					<a href="Podstrani/zgodovina.html">zgodovina.</a></p>
+				
+				<p>Če namesto tega želite takoj prebrati predloge za izdelavo računalniške igre, pa pojdite na <a href ="Podstrani/izdelava.html">izdelavo.</a></p>
+			</div>
+		</div>
+		
+		</br>
+		</br>
+		
+		<footer>
+			<div> Računalniške igre © 2023 by Maja Polak is licensed under CC BY-NC 4.0 </div> <!--Licenca od ustvarjalca spletnega mesta-->
+		</footer>
+	</body>
+</html>	
+

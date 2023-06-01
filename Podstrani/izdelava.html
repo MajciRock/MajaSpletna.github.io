@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Računalniške igre in njihova izdelava">
+		<meta name="keywords" content="igre, računalniške igre, izdelava igre">
+		<meta name="author" content="Maja Polak">
+		
+		<link rel="stylesheet" href="../stil.css">
+	
+		<title>Računalniške igre | Izdelava</title>
+	</head>
+	<body>
+		<div id="naslov">
+			<a href="../index.html">
+				<img src="../Slike/projektna.svg" alt="Logotip začetnic imena" height="500">
+			</a>
+			<h1>Izdelava svoje igre</h1>
+		</div>
+		<nav>
+			<a href="igra.html">Kaj je igra?</a>
+			<a href="vrste.html">Vrste iger</a>
+			<a href="zgodovina.html">Zgodovina</a>
+			<a href ="izdelava.html">Izdelava</a>
+			<a href="viri.html">Viri</a>
+		</nav>
+		<!--To stran sem lastno ročno napisala, samo ena oseba bi predlaga za popravke (bilo jih je veliko), to je edino največ slovničnih napak.-->
+		
+		<div class="vsebinaIzdelava">
+			<p>Da lahko kdorkoli ustvari igro, ne samo računalniško, ampak kakršno koli, potrebuje načrt.
+				Prva stvar pri vsakem načrtu je zamisel: "Kaj vse potrebujem?".</br></br>
+				Ker se bomo danes ukvarjali z izdelavo enostavne igre, se bomo natančneje vprašali "Katero znanje in 
+				katero orodje potrebujem?". Ob zahtevnejših igrah se tudi vprašamo: "Kakšne zvrsti bo igra, kakšna
+				bo animacija, v katerem jeziku bom programiral?".</br></br>
+				Iz naših vprašanj smo sedaj izluščili, da ima vsaka igra vizualni (nam vidni) ter programski (kar se
+				dogaja v ozadju) del.</br></br>
+				Sedaj si lahko odgovorimo na začetni vprašanji. "Katero znanje potrebujem?" Naučiti se moramo osnovnega znanja programiranja.
+				Za enostavno igro, recimo arkadne zvrsti, to vključuje premikanje osebe (ob določenem dogodku se premakne, npr. ob
+				pritisku tipke, premiku miške ali se sam premakne) ter znanje o tem, kaj so zanke - dogodki, ki se ves čas ponavljajo,
+				dokler naš pogoj velja.</br></br>
+				Naše drugo vprašanje "Katero orodje potrebujem?", lahko enostavo odgovorimo z orodjem Scratch - z njim bomo ustvarili našo 
+				prvo računalniško igro.</br></br></br>
+				<b><u>Prednosti programa Scratch so:</u></b>
+					<ul>
+						<li>celoten je preveden v slovenščino,</li>
+						<li>namesto tekstovnega programiranja, je to programiranje z delčki, ki jih moraš med seboj postaviti,
+							da se stikajo, </li>
+						<li>vizualni liki so že podani, ali pa si lahko svojega ustvariš oz. naložiš s spletnega mesta.</li>
+					</ul>
+				Sedaj vemo, da to programsko orodje vsebuje in programirljvii in vizualni del našega načrta.</br></br>
+				Tisti, ki pa menijo, da jim je programiranje z delčki preveč enostavno, pa lahko preidejo na tekstovno programiranje,
+				tukaj bi pa predlagala programski jezik Python. Ima enostavno strukturo za pisanje ter je
+				univerzalen, uporaben za veliko stvari. Tukaj je edina slabost, da potrebuješ zelo veliko znanja, preden
+				si sploh sposoben ustvariti svojo prvo igro.
+			</p></br></br>	
+				
+			<p>Sama sem si kot prvo enostavno igro domislila, da imamo dva lika. Eden je maček, ki ga od samega začetka
+				dobimo na spletnem mestu na katerem programiramo. Drugi lik, ki sem si ga izbrala, pa je žoga.</br></br>
+				Moja glavna zamisel igre je, da imamo žogo, ki se pojavi nekje na ekranu, mi (maček) pa moramo do žoge.
+				Ko se žoge, pa se le-ta prestavi na novo mesto.</br></br>
+				
+				Program, ki sem ga morala napisati, je bil naslednji: za mačka sem si domislila, da ga bomo premikali s
+				tipkovnico, s tipkami, ki predstavjajo puščice 'gor', 'dol', 'levo' in 'desno'. Vedno, ko bi pritisnili na
+				eno od teh tipk, bi se pa maček prestavil za določeno število mest v to smer.</br></br>
+				
+				Žoga bi medtem vsebovala zanko, ki se prične izvajati takoj, ko začnemo igrati igro. Kar bo pa zanka za žogo preverjala, 
+				je pa "ali se maček me dotika?". Če je odgovor da, potem bo storila, kar mu naprej sledi v zanki. V našem
+				primeru je to povzroči, da se žoga prestavi na drugo mesto.</br></br>
+				
+				To je pa tudi vsa umetnost za enostavno igro!</br></br>
+				
+				Edina stvar, na ketero moramo biti zelo pozorni, je način premikanje mačke. Tu ji ne moramo samo reči
+				'premakni se levo', ampak ji moramo opisati matematično, kam se premakniti. Tu pride v poštev koordinatni sistem.
+				Za enostavno razlago: vodoravna smer je x, če gre desno, je število pozitivno, če gre levo, pa negativno.
+				Enako velja za navpično smer - smer y. Tukaj pa pomeni, če gre gor, gre v pozitivno smer, in če gre dol, 
+				gre v negativno smer.</br></br>
+				
+				Spodaj imam podano, kako izgleda moja koda, s katero sem ustvarila premikanje mačke in žoge.
+				
+				<!--Tukaj nisem veliko poudarjala, saj opisujem svoj postopek izdelovanja iger (poleg tega, da nisem samozavestna v svoje pisanje, da bi to storila)-->
+				
+				<div>
+					<div>
+						<img src="../Slike/scratch1.png" height="250px">
+						<div class="spodaj">Koda za mačka iz Scratch by Maja Polak is licensed under CC BY-NC-SA 4.0 </div>
+					</div>
+					<div>
+						<img src="../Slike/scratch2.png" height="250px">
+						<div class="izdelava2">Koda za žogo iz Scratch by Maja Polak is licensed under CC BY-NC-SA 4.0</div>
+					</div>
+				</div>
+			</p>
+			<!--Dodala sem svoji lastni zaslonski sliki.-->
+			
+		</div>
+		</br>
+		</br>
+		
+		<footer>
+			<div> Računalniške igre © 2023 by Maja Polak is licensed under CC BY-NC 4.0 </div>
+		</footer>
+	</body>
+</html>	
+
+<!--Komentar-->
