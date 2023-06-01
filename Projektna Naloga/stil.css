@@ -1,0 +1,123 @@
+/* Na splošno kaj je v body na vseh spletnih mestih, velikost pisave, stil pisave in kakšne barve je ozadje*/
+body {
+	font-size: 16px;
+	font-family: Arial;
+	background-color: #E8ECF9;
+}
+
+/*Prva vrstica na vseh spletnih mestih, logotip in ime podstrani, na kateri se nahajam, flex display, da se prilagajajo v isto vrstico.*/
+#naslov {
+	display: flex;
+}
+
+/*Prva vrstica, kjer je logotip za domov, razmik od zgoraj in koliko naj bo njegova višina */
+#naslov img {
+	margin-top: 20px;
+	height: 100px;
+}
+
+/*Vrstica za meni, kjer so napisani naslovi ostalih spletnih straneh, razdalja med njimi nastavljena enakovredno, flex display da so v isti vrstici preurejeni.*/
+nav {
+	display: flex;
+	width: auto;
+}
+
+/*Vsak link, ime po sebej v meniju za podstrani; od vrha in dna stran 20px, levo ter desno pa 40px. Pisava črna in določila barvo meni vrstice.*/
+nav a {
+	padding: 20px 40px;
+	color: black;
+	background-color: #CC99FF;
+}
+
+
+
+
+/*Spletna stran domov oz index, del kjer je besedilo, flex, da različna dva dela sta drug ob drugemu.*/
+.besedilo {
+	display: flex;
+	
+}
+
+/*Spletna stran domov oz index, leva stran strani, kjer je besedilo, je samo določen del širine namenjen zanj, zadost razmika od vseh straneh, dodala ga v okvir*/
+.uvod {
+	float: left;
+	width: 40%;
+	margin: 25px;
+	font-size: 20px;
+	border: solid;
+	border-color: gray;
+	padding: 5px;
+}
+
+/*Spletna stran domov oz index, desna stran strani, kjer je besedilo, določena širina namenjena zanj in v škatli*/
+.podatki {
+	float: right;
+	width: 50%;
+	border: solid;
+	padding: 5px;
+	border-color: gray;
+}
+
+
+
+
+/*Spletna stran igra, kjer je vsebina, ta je imela težave, ko sem poskusila vse vsebine imeti na eni strani. Sem zato vsako dala v svoj class.*/
+.vsebinaIgra{
+	margin: 30px;
+}
+
+/*Podstran igra, vsebina - odstavki znotraj nje na levi strani in določena max širina zaslona*/
+.vsebinaIgra p{
+	float: left;
+	max-width: 85%;
+}
+
+/*Podstran igra, vsebina - slike z licenco in virom, na desni strani od vsebine*/
+.vsebinaIgra div{
+		right: 30px;
+		position: absolute;
+}
+
+
+/*Podstran igra - vsebina - napis pod sliko, kjer je napisan vir in licenca*/
+.spodaj{
+	text-align: center;
+	max-width: 80%;
+}
+
+
+/*Podstran izdelava - vsebina - druga slika, ki je ožja ima manjši obseg za besedilo, da pokriva širino slike (ne bi delovalo drugače, ker so ostale drugačne širine)*/
+.izdelava2{
+	text-align: center;
+	max-width: 45%;
+}
+
+/*Vse ostale vsebine so lahko imeli isto sestavo, igre so bile izjema, katere sem tudi prvo delala (zato ostale posebej, da se ne bi ponovno soočala s komplikacijami)*/
+.vsebinaVrste, .vsebinaZgodovina, .vsebinaIzdelava, .vsebinaViri{
+	padding-top: 10px;
+	margin: 30px;
+}
+
+/*Podstran izdelava, kjer sta podani obe sliki z licenco, flex display da sta drug ob drugi z določenim razmikom.*/
+.vsebinaIzdelava div{
+	display: flex;
+	margin: 20px;
+}
+
+/*Vsaka slika posebej z licenco, da je licenca takoj pod sliko; to naredi block display.*/
+.vsebinaIzdelava div div{
+	display: block;
+}
+
+
+/*Končna licenca moje spletne strani na dnu*/
+footer{
+	text-align: center;
+}
+
+
+/*Končna licenca na spleti strani Igra; ta mi je težave delala že na splošno zaradi slike na strani, sem morala druge urediti kot pri ostalih straneh.*/
+#footerIgra{
+	text-align: center;
+	margin-top: 500px;
+}
